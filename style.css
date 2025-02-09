@@ -1,0 +1,110 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1c1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #393434;
+}
+
+/* Container for the journal */
+.journal-container {
+    background-color: #a6928886;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #dcdbcb;
+}
+
+button {
+    background-color: #373434;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8c763f;
+}
+
+/* Entry form styles */
+.entry-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    background-color: #f3e9cd;
+    resize: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#saveEntryBtn {
+    width: 150px;
+    align-self: center;
+}
+
+/* Journal entries display */
+.entries {
+    margin-top: 20px;
+}
+
+.entry {
+    background-color: #d8d7ce;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.entry p {
+    font-size: 1.2rem;
+}
+
+.entry button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e46e61;
+}
+
+.entry button:hover {
+    background-color: #c0392b;
+}
